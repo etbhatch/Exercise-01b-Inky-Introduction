@@ -45,16 +45,17 @@ You now have a seashell, perhaps your mother would like it.
 -> listen_beach
 
 ==sprint_cave==
-You ran, trying to break free from the calling sea. You're out if breath, gasping for air. The air tastes old, stale, and damp.{seashell_pickup: You must have dropped the shell during your sprint.} You know that if you head back now, your father should be waiting with open arms.
+You ran, trying to break free from the calling sea. You're out of breath, gasping for air. The air tastes old, stale, and damp.{seashell_pickup: You must have dropped the shell during your sprint.} You know that if you head back now, your father should be waiting with open arms.
 *[Head home.] ->deep_cave_2
 *[Go back to the water.] ->beach_shore
 
 ==deep_cave_2==
-You feel the rush of wind against your face. You stand at the edge of a cliff, staring into the great beyond. You're back home. Though something is missing. Your father calls for you, worried since you went missing. "Welcome back," he says with a smile. "Tell me, did you find what you were looking for?"
+You feel the rush of wind against your face. You stand at the edge of a cliff, staring into the great beyond. You're back home. Though something is missing. Your father calls for you, worried since you went missing. 
+"Welcome back," he says with a smile. "Tell me, did you find what you were looking for?"
 -> END
 
 ==wade_waters==
-You wade out, feeling the cold water rush around you. It makes you feel alive. Your feel, happy.
+You wade out, feeling the cold water rush around you. It makes you feel alive. You feel, happy.
 *[Go deeper.] ->deep_waves
 *[Turn back, head home.] ->deep_cave_3
 
@@ -71,7 +72,7 @@ You made it home, you feel happy, a smile still planted on your face.
 
 ==deep_cave_4==
 You made it home, you feel happy, a smile still planted on your face. The song still radiating in your soul. Making the whole world seem brighter.
-"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back.{seashell_pickup: That's a beautiful shell you have there. I'm sure you mother would love it.}"
+"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back.{seashell_pickup: Hey, that's a beautiful shell you have there. I'm sure you mother would love it.}"
 *{seashell_pickup} [Give the seashell as a present for your mother.]->seashell_gift
 *[Go home] ->END
 
@@ -84,5 +85,5 @@ You feel ensared by the song of the waves. You feel at peace, yet you desire mor
 *[Go even deeper.] ->deeper_waves
 
 ==deeper_waves==
-You feel as though you are floating in an infinite void. You feel good, you feel happy. ALmost as though nothing matters at all. Almost as though you no longer exist.
+You feel as though you are floating in an infinite void. You feel good, you feel happy. Almost as though nothing matters at all. Almost as though you no longer exist.
 -> END
