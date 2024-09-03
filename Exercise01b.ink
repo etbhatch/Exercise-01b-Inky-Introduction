@@ -76,7 +76,7 @@ You made it home, you feel happy, a smile still planted on your face. The song s
 *[Go home] ->END
 
 ==seashell_gift==
-You gave the seashell to your mother when you got home. She noticed how happy you seemed from your day and aceptedcepted the seashell with a smile that matched yours.
+You gave the seashell to your mother when you got home. She noticed how happy you seemed from your day and acepted the seashell with a smile that matched yours.
 -> END
 
 ==deep_waves==
