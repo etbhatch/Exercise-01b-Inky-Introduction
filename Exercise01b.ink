@@ -12,6 +12,8 @@ This exercise will demonstrate the following in the example video:
  In the assignment:
  - Add four more knots (and feel free to change any of the example text, this is YOUR story)
  - Add at least one more conditional
+ 
+ Editor's Note: My goal was mostly to work on my writing, so that is why I made more lines than the required amount. If the story is either interesting or slightly confusing, I did my job right.
 */
 
 -> beach_shore
@@ -69,7 +71,12 @@ You made it home, you feel happy, a smile still planted on your face.
 
 ==deep_cave_4==
 You made it home, you feel happy, a smile still planted on your face. The song still radiating in your soul. Making the whole world seem brighter.
-"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back.{seashell_pickup: That's a beautiful shell you have there, I'm sure your mother would love it}"
+"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back.{seashell_pickup: That's a beautiful shell you have there. I'm sure you mother would love it.}"
+*{seashell_pickup} [Give the seashell as a present for your mother.]->seashell_gift
+*[Go home] ->END
+
+==seashell_gift==
+You gave the seashell to your mother when you got home. She noticed how happy you seemed from your day and excepted the seashell with a smile that matched yours.
 -> END
 
 ==deep_waves==
