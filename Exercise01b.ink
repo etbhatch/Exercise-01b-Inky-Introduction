@@ -30,14 +30,14 @@ The cave you now stand in is dark, cold, and unfeeling. You feel as though just 
 *[Turn back.] ->beach_shore
 
 ==deep_cave==
-You feel the rush of wind against your face. You stand at the edge of a cliff, staring into the great beyond. You're back home. It almost feels as though you never left. Your father calls for you, worried since you went missing.
+You feel the rush of wind against your face. You stand at the edge of a cliff, staring into the great beyond. You're back home. It almost feels as though you never left. {sprint_cave: Though something is missing, you can't quite figure out what.} Your father calls for you, worried since you went missing.
 "Welcome back," he says with a smile. "Tell me, did you find what you were looking for?"
 -> END
 
 ==listen_beach==
 You stand there, listening to the song. It makes you feel...at peace. That your worries can finally dissapear. The answers to that question burning deep within your heart, may finally be understood. All you must do, is head forward and never look back. {not seashell_pickup: Though the beautiful shell on the ground may make you feel better.}
 *[Sprint for the cave.] ->sprint_cave
-*[Wade out into the waves.] ->wade_waters_2
+*[Wade out into the waves.] ->wade_waters
 *[Pick up the seashell.] ->seashell_pickup 
 
 ==seashell_pickup==
@@ -46,33 +46,19 @@ You now have a seashell, perhaps your mother would like it.
 
 ==sprint_cave==
 You ran, trying to break free from the calling sea. You're out of breath, gasping for air. The air tastes old, stale, and damp.{seashell_pickup: You must have dropped the shell during your sprint.} You know that if you head back now, your father should be waiting with open arms.
-*[Head home.] ->deep_cave_2
+*[Head home.] ->deep_cave
 *[Go back to the water.] ->beach_shore
 
-==deep_cave_2==
-You feel the rush of wind against your face. You stand at the edge of a cliff, staring into the great beyond. You're back home. Though something is missing. Your father calls for you, worried since you went missing. 
-"Welcome back," he says with a smile. "Tell me, did you find what you were looking for?"
--> END
-
 ==wade_waters==
-You wade out, feeling the cold water rush around you. It makes you feel alive. You feel, happy.
-*[Go deeper.] ->deep_waves
-*[Turn back, head home.] ->deep_cave_3
-
-==wade_waters_2==
 You wade out, feeling the cold water rush around you. It makes you feel alive. You feel, happy. 
-You feel at peace. Listening to the song of the waves.
+{listen_beach:You feel at peace. Listening to the song of the waves.}
 *[Go deeper.] ->deep_waves
-*[Head home.] -> deep_cave_4
+*[Head home.] -> deep_cave_water
 
-==deep_cave_3==
-You made it home, you feel happy, a smile still planted on your face.
-"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back."
--> END
-
-==deep_cave_4==
-You made it home, you feel happy, a smile still planted on your face. The song still radiating in your soul. Making the whole world seem brighter.
-"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back.{seashell_pickup: Hey, that's a beautiful shell you have there. I'm sure you mother would love it.}"
+==deep_cave_water==
+You made it home, you feel happy, a smile still planted on your face. {listen_beach:The song still radiating in your soul. Making the whole world seem brighter.}
+"Welcome home," your father says, a smile on his face. "You look happy today! Let's head home, your mother is worried. You can tell us about your adventure when we get back." 
+{seashell_pickup: "Hey, that's a beautiful shell you have there. I'm sure you mother would love it."}
 *{seashell_pickup} [Give the seashell as a present for your mother.]->seashell_gift
 *[Go home] ->END
 
